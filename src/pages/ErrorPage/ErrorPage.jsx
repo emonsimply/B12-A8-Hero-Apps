@@ -4,16 +4,28 @@ import { Link } from "react-router";
 
 const ErrorPage = () => {
   return (
-    <div className="flex flex-col gap-10 justify-center items-center min-h-screen">
-      <img className="" src={errorImg} alt="" />
-      <div className="flex flex-col gap-3 justify-center items-center">
-        <h1 className="font-bold text-5xl">Oops, page not found!</h1>
-        <p className="text-xl text-gray-500">The page you are looking for is not available.</p>
+    <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-10">
+      <img
+        className="w-full md:w-sm max-w-md sm:max-w-sm md:max-w-lg lg:max-w-xl"
+        src={errorImg}
+        alt="404 Error"
+      />
+
+      <div className="mt-8 flex flex-col gap-4 items-center">
+        <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl">
+          Oops, Page Not Found!
+        </h1>
+        <p className="text-base sm:text-lg md:text-xl text-gray-500">
+          The page you are looking for is not available.
+        </p>
+
         <Link
           to="/"
-          className="btn btn-lg px-10 text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:from-[#9F62F2] hover:to-[#632EE3]"
+          className="btn btn-lg mt-4 px-10 border-none text-white font-semibold 
+          bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:from-[#9F62F2] hover:to-[#632EE3] 
+          "
         >
-          Go Back!
+          Go Back
         </Link>
       </div>
     </div>

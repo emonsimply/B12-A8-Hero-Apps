@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 import logo from "../../assets/logo.png";
 import { FaGithub } from "react-icons/fa";
@@ -48,10 +48,10 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+          <Link to="/" className="flex items-center gap-1 font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
             <img className="w-8" src={logo} alt="" />
             HERO APPS
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
