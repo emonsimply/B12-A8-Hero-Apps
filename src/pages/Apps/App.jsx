@@ -1,9 +1,11 @@
 import React from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 const App = ({ app }) => {
-  const { image, title, ratingAvg, downloads } = app;
+  const { image, title, ratingAvg, downloads, id } = app;
   return (
+    <Link to={`/app/${id}`}>
     <div className=" bg-white shadow-md rounded-sm hover:shadow-lg hover:scale-[1.02] transition-transform duration-300">
       <div className="p-4">
         <img className="rounded-lg w-44 lg:w-full" src={image} alt={title}  />
@@ -25,6 +27,7 @@ const App = ({ app }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -3,6 +3,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../pages/Home/Home";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Apps from "../pages/Apps/Apps";
+import AppDetails from "../pages/Apps/AppDetails";
 
 export const router = createBrowserRouter([
   {
@@ -19,8 +20,8 @@ export const router = createBrowserRouter([
         Component: Apps,
       },
       {
-        path: "/appDetails",
-        Component: () => <div>Apps Page</div>,
+        path: "/app/:id",
+        Component: AppDetails,
       }
     ]
   },
