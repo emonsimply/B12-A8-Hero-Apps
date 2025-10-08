@@ -9,13 +9,13 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink>Apps</NavLink>
+        <NavLink to="/apps">Apps</NavLink>
       </li>
       <li>
-        <NavLink>Installation</NavLink>
+        <NavLink to="/installation">Installation</NavLink>
       </li>
     </>
   );
