@@ -5,7 +5,7 @@ import bannerImg from "../../assets/hero.png";
 
 const Banner = () => {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center p-5 text-center">
+    <div className="mt-10 flex flex-col items-center justify-center text-center max-w-7xl mx-auto px-6">
       <h1 className="text-6xl font-bold max-w-lg ">
         We Build{" "}
         <span className=" bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
