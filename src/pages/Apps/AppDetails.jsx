@@ -13,6 +13,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import AppNotFound from "../ErrorPage/AppNotFound";
 
 
 const AppDetails = () => {
@@ -21,6 +22,9 @@ const AppDetails = () => {
   const [btnText, setBtnText] = useState("Install Now");
 
   const app = apps.find((app) => app.id === parseInt(id));
+  if(!app){
+    return <AppNotFound></AppNotFound>
+  }
 
   const {
     image,
@@ -55,7 +59,10 @@ const AppDetails = () => {
     localStorage.setItem("installation", JSON.stringify(updatedList));
   };
 
+
+
   return (
+    
     <div className="max-w-7xl mx-auto p-4 my-8 ">
       
       <div className="md:flex items-center gap-6 mb-10">
