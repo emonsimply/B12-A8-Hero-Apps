@@ -14,7 +14,7 @@ const Banner = () => {
         Apps
       </h1>
       <p className="max-w-4xl text-gray-500 my-6 text-lg">
-        At HERO.IO , we craft innovative apps designed to make everyday life
+        At HERO APPS , we craft innovative apps designed to make everyday life
         simpler, smarter, and more exciting. <br /> Our goal is to turn your ideas into
         digital experiences that truly make an impact.
       </p>

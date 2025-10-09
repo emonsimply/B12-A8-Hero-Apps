@@ -16,7 +16,7 @@ const App = ({ app }) => {
           <div className="flex items-center justify-between mt-2">
             <div className="flex items-center gap-1 bg-green-100 text-green-600 px-2 py-1 rounded-md text-sm font-semibold">
               <FaDownload className="text-green-500" />
-              <span>{downloads}</span>
+              <span>{downloads}M</span>
             </div>
 
             <div className="flex items-center gap-1 bg-orange-100 text-orange-500 px-2 py-1 rounded-md text-sm font-semibold">

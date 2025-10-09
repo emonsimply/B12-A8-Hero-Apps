@@ -14,6 +14,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+
 const AppDetails = () => {
   const { id } = useParams();
   const { apps } = useApps();
@@ -56,6 +57,7 @@ const AppDetails = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-4 my-8 ">
+      
       <div className="md:flex items-center gap-6 mb-10">
         {/* image */}
         <div>
@@ -79,7 +81,7 @@ const AppDetails = () => {
             <div className=" mt-4">
               <img src={downloadsIcon} alt="" />
               <p className="text-sm opacity-70">Downloads</p>
-              <p className="text-3xl font-bold">{downloads}</p>
+              <p className="text-3xl font-bold">{downloads}M</p>
             </div>
             <div className=" mt-4">
               <img src={ratingAvgIcon} alt="" />
